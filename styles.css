@@ -1,0 +1,204 @@
+body {
+    color: white;
+    background: black;
+    line-height: 12px;
+    letter-spacing: .5px;
+    user-select: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: inline-block;
+    position: relative;
+    width: 60%;
+    height: 350px;
+    text-align: center;
+    border: 2px solid white;
+    box-sizing: border-box;
+    background: grey;
+    resize: both;
+    overflow: auto;
+  }
+  .container-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .blue,
+  .black,
+  .red {
+    position: static;
+    display: block;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .box-1 {
+    margin: 5px;
+    text-align: left;
+  }
+  .box-2 {
+    margin: 5px;
+  }
+  .box-3 {
+    margin: 5px;
+    text-align: right;
+  }
+  .blue {
+    background: rgba(0, 190, 255, 0.5);
+  }
+  .black {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .red {
+    background: rgba(255, 0, 100, 0.5);
+  }
+  .spacer {
+    height: 600px;
+  }
+  .properties-container {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 35%;
+    height: 350px;
+    pointer-events: none;
+  }
+  .properties-blue,
+  .properties-black,
+  .properties-red {
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 33%;
+    width: 100%;
+    margin: 5px 0;
+    background: rgba(50,50,50,0.6);
+  }
+  .input-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 14px;
+    padding: 2.5px 0;
+    justify-content: space-between;
+  }
+  .text {
+    width: 10%;
+    margin-left: 5px;
+    font-size: 8px;
+    pointer-events: auto;
+  }
+  .slider-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0 5px;
+    pointer-events: auto;
+  }
+  .slider {
+    width: 100%;
+    appearance: none;
+    height: 12px;
+    background: rgba(100, 100, 100, 0.6);
+    pointer-events: auto;
+  }
+  .slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 14px;
+    background: rgba(0, 190, 255, 0.5);
+    cursor: pointer;
+  }
+  .slider-blue::-webkit-slider-thumb {
+    background: rgba(0, 190, 255, 0.5);
+  }
+  .slider-black::-webkit-slider-thumb {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .slider-red::-webkit-slider-thumb {
+    background: rgba(200, 0, 60, 0.5);
+  }
+  .slider-label {
+    position: absolute;
+    color: #bbb;
+    pointer-events: none;
+    z-index: 3;
+  }
+  .settings-container {
+    display: flex;
+    position: absolute;
+    top: 380px;
+    width: 100%;
+    background: transparent;
+    justify-content: space-between;
+    pointer-events: none;
+  }
+  .controls {
+    display: flex;
+    margin: 10px 0;
+    width: 100%;
+    padding: 0 20px 0 0;
+    text-align: center;
+    justify-content: center;
+    background: transparent;
+    box-sizing: border-box;
+  }
+  .controls p {
+    color: #aaa;
+    font-weight: bold;
+    margin: 5px 0 0 5px;
+  }
+  .controls button {
+    margin: 5px 0;
+    padding: 5px;
+    color: #111;
+    border: none;
+    border-radius: 5px;
+    background: rgba(100,100,100,0.6);
+    box-sizing: border-box;
+    pointer-events: auto;
+  }
+  .controls button:hover{
+    background: #444;
+    color: #ccc;
+  }
+  .controls-blue,
+  .controls-black,
+  .controls-red {
+    position: relative;
+    width: 33%;
+    margin: 5px;
+    padding: 0 10px 10px 10px;
+    background: rgba(50,50,50,0.6);
+  }
+  button.selected {
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .strike {
+    text-decoration: line-through;
+  }
+  .marker {
+    width: 15px;
+    height: 15px;
+    background: white;
+    position: sticky;
+    display: absolute;
+    bottom: 0;
+    left: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
